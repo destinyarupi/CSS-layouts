@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+/* header styling */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color: hsl(0, 0%, 95%);
+}
+.nav-flex{
+    color: hsl(0, 0%, 95%);
+    background-color: rgb(26,28,40);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    font: 700 36px 'Big Shoulders Display', cursive;
+}
+.nav-links{
+    display: flex;
+    column-gap: 40px;
+    letter-spacing: 2px;
+    font: 700 24px 'Big Shoulders Display', cursive;
+}
+.nav-item{
+    color: #000;
+    text-decoration: none;
+}
+.color-flex{
+    color: hsl(0, 0%, 95%);;
+}
+
+/* CSS Flexbox styling */
+#flex{
+    height: 86.5vh;
+    font: 400 15px 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+#flexbox{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 307px;
+    padding: 48px   
+}
+.sedans{
+    border-radius: 10px 0px 0px 10px;
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    border-radius: 0px 10px 10px 0px;
+    background-color: hsl(179, 100%, 13%);
+}
+svg{
+    margin-bottom: 42px;
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 1px;
+    font: 700 32px 'Big Shoulders Display', cursive;
+    margin-bottom: 39px;
+}
+p{
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 87px;
+}
+button{
+    font-family: 'Lexend Deca', sans-serif;;
+    width: 146px;
+    height: 48px;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: inherit;
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.btn1{color: hsl(31, 77%, 52%)}
+.btn2{color: hsl(184, 100%, 22%)}
+.btn3{color: hsl(179, 100%, 13%)}
+
+/* CSS Grid styling */
+#grid{
+    width: 100vw;
+    height: 86.8vh;
+    background-color: rgb(26,28,40);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.grid-container{
+    width: 60%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 2fr 0.6fr 1.5fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap:15px;
+}
+.item1{
+    grid-area: 1/1/2/3;
+    background:rgb(235,80,32);
+}
+.item2{
+    background:rgb(255,164,1);
+}
+.item3{
+    grid-area: 2/1/4/1;
+    background:rgb(5,170,66);
+}
+.item4{
+    grid-area: 2/2/2/4;
+    background:rgb(1,174,253);
+}
+.item5{
+    grid-area: 3/2/3/4;
+    background:rgb(1,174,253);
+}
+
+/* header media queries */
+@media (max-width:768px) {
+    nav{
+        padding: 7px 17px 7px 11px;;
+    }
+    .logo{
+        letter-spacing: 1px;
+        font-size: 24px;
+    }
+    .nav-links{
+        column-gap: 15px;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }  
+}
+@media (min-width:769px) and (max-width:920px){
+    .nav-grid{
+        padding: 15px 24px
+    }
+}
+@media (min-width:921px) and (max-width:1100px){
+    .nav-flex{
+        padding: 24px 24px
+    }
+}
+
+/* Flexbox media queries */
+@media (max-width:768px) {
+    #flexbox{
+        height: auto;
+        margin-top: 40px;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-bottom: 40px;
+    }
+    .card{
+        width: 100%;
+        padding: 48px;
+    }
+    .sedans {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .luxury {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+@media (min-width:769px) and (max-width:960px){
+    .flex-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        margin-top: 85px;
+    }
+    .sedans {
+        border-radius: 10px 0px 0px 0px;
+    }
+    .suvs{
+        border-radius: 0px 10px 0px 0px;
+    }
+    .luxury{
+        width: 614px;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+/* Grid media queries */
+@media (min-width:320px) and (max-width:1200px){
+    .grid-container{
+        width: 90%;
+    }
+}
+@media (min-width:1024px) and (max-width:1279px){
+    .grid-container{
+        width: 70%;
+    }
+}
+
+/* Style Guide 
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 *
