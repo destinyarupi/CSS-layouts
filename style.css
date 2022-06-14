@@ -187,12 +187,15 @@ button:hover{
     }
 }
 @media (min-width:769px) and (max-width:960px){
+    #flex{
+        height: auto
+    }
     .flex-container{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 85%;
-        margin-top: 85px;
+        margin: 45px 0;
     }
     .sedans {
         border-radius: 10px 0px 0px 0px;
